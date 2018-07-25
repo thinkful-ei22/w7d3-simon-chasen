@@ -17,7 +17,7 @@ export default class ButtonClick extends React.Component {
   render() {
     return (
       // <Button value={this.state.display} onClick={value => this.generateMessage(value)}/>
-      <Button onClick={generateMessage}/>
+      <button onClick={generateMessage} className="button">Think of a question and click!</button>
     );
   }
 }
