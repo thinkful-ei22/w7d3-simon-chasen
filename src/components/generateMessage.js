@@ -1,5 +1,5 @@
-import React from "react";
-import messages from "../messages.json";
+import React from 'react';
+import messages from '../messages.json';
 
 export default function GenerateMessage(props) {
   // const randomNumber = Math.floor(Math.random() * 20 + 1);
@@ -9,5 +9,9 @@ export default function GenerateMessage(props) {
       response = messages[i].response;
     }
   }
-  return <div>{response}</div>;
+  return (
+    <div>
+      {response}
+    </div>
+  );
 }

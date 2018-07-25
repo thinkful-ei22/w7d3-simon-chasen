@@ -1,5 +1,5 @@
-import React from "react";
+import React from 'react';
 
-export default function Header(props) {
+export default function Header() {
   return <h1 className="header">Magic Eight Ball</h1>;
 }
