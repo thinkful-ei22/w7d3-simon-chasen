@@ -8,14 +8,14 @@ export default class App extends React.Component {
     super(props);
     this.state = {
       display: false,
-      message: "Hi"
+      // message: "Hi"
     };
   }
-  generateMessage(mess) {
-    this.setState({
-      message: mess
-    });
-  }
+  // generateMessage(mess) {
+  //   this.setState({
+  //     message: mess
+  //   });
+  // }
 
   displayMethod() {
     this.setState({
@@ -24,12 +24,11 @@ export default class App extends React.Component {
   }
   render() {
     const randomNumber = Math.floor(Math.random() * 20 + 1);
-
     if (this.state.display) {
       return (
         <div>
           <Header />
-          <Button onClick={e => this.generateMessage(e)} />
+          <Button onClick={() => this.displayMethod()} />
           <GenerateMessage value={randomNumber} /> 
         </div>
       );
