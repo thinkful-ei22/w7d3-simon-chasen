@@ -1,14 +1,14 @@
-import React from "react";
-import Header from "./header";
-import Button from "./button";
-import GenerateMessage from "./generateMessage";
+import React from 'react';
+import Header from './header';
+import Button from './button';
+import GenerateMessage from './generateMessage';
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       display: false,
-      message: "Hi"
+      message: 'Hi'
     };
   }
   generateMessage(mess) {
